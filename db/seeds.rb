@@ -28,3 +28,14 @@ excellent_speakers = [
 Speaker.create(excellent_speakers)
 
 p "All those new winners added."
+
+talks_data = [
+    {:topic=>"A Fashion School for Ants?", :duration=>90, :start_time=>DateTime.now-(1.0/24)},
+    {:topic=>"Button-down Bliss", :duration=>45, :start_time=>DateTime.now+(23.0/24)},
+    {:topic=>"Ambi-turning", :duration=>30, :start_time=>DateTime.now+(2.0/24)},
+    {:topic=>"The Joy of Jumpsuits", :duration=>30, :start_time=>DateTime.now+(4.0/24)}
+]
+
+Talk.create(talks_data)
+
+p "New talks added"
